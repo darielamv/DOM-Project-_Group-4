@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to the Book Store!</h1>
+    <h3>Add a book to the store</h3>
+
+    <form id="book-form">
+        <input type="text" id="title" placeholder="Book Title" required>
+        <input type="text" id="author" placeholder="Book Author" required>
+        <input type="text" id="publisher" placeholder="Book Publisher" required>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <h3>Books in Stock</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="books-container"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
